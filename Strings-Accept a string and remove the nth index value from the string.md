@@ -34,4 +34,3 @@ Pyhon
 ## Result
 The program defines a function that reconstructs a string by skipping a specific index. It uses a for loop to iterate through the indices of the original string; whenever the current index i does not match the target index n, that character is appended to a new string a. This demonstrates how strings are immutable in Python, requiring the creation of a new string rather than modifying the original one in place.
 
-## Result
