@@ -14,7 +14,19 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
-## Output
+~~~
+import re
 
+l1 = []
+items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']
+
+for i in items:
+    if not re.search(r"e", i):
+        l1.append(i)
+
+print(l1)
+~~~
+## Output
+['goal', 'sit']
 ## Result
+The program utilizes the re (regular expression) module to filter a list of strings. By using re.search(r"e", i), the code checks for the existence of the character 'e' within each word. The if not condition ensures that only words where the pattern is not found are appended to the results list l1.
